@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #222;
+  background: #fff;
+}
+
+header {
+  width: 100%;
+  padding: 34px 0 22px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  color: #777;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 70px 30px 40px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.photo-box img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.text-box h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 20px;
+}
+
+.contact {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.icons a,
+.contact a {
+  color: #222;
+  text-decoration: none;
+}
+
+.icons a:hover,
+.contact a:hover {
+  color: #777;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  padding: 40px 20px;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  main {
+    padding-top: 40px;
+  }
+}
